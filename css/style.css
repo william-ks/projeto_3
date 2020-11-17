@@ -1,0 +1,405 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Open Sans', sans-serif;
+}
+
+
+html,body{
+	height: 100%;
+}
+
+
+.center{
+	max-width: 1280px;
+	margin: 0 auto;
+    padding: 0 2%;
+}
+
+/* ************** */
+
+header{
+    width: 100%;
+    height: 87vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: cover;
+    background-image: url('../img/capa.png');
+}
+
+header .h-flex{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-top: 30px;
+    width: 160px;
+    height: 40px;
+    background-image: url(../img/logo-danki.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header .desktop ul{
+    margin-top: 35px;
+    list-style-type: none;
+}
+
+header .desktop ul li{
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 20px;   
+}
+
+header .desktop ul li:hover{
+    border-bottom: 4px solid #9039d8;
+}
+
+header .desktop ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.mobile{
+    display: none;
+}
+
+/*  */
+
+header .h-text{
+    float: right;
+    max-width: 600px;
+    margin: 200px 150px;
+    color: white;
+    margin-left: 40%;
+}
+
+header .h-text h2{
+    font-weight: 300;
+    font-size: 40px;
+}
+
+header .h-text p{
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+/* *************** */
+
+.call1{
+    width: 100%;
+    background-color: #472562;
+    height: 400px;
+}
+
+.call1-flex{
+    display: flex;
+}
+
+.call1-text{
+    color: white;
+    width: 50%;
+    margin-top: 55px;
+    padding-left: 100px;
+}
+
+.call1-text h2{
+    font-weight: 350;
+    font-size: 30px;
+
+}
+
+.call1-text p{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.call1-text ul{
+    margin-left: 10px;
+    list-style-position: inside;
+}
+
+.call1-text ul li{
+    margin-top: 10px;
+}
+
+.call1-text button{
+    background-color: #FF703D;
+    width: 165px;
+    height: 44px;
+    cursor: pointer;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 44px;
+    border: 0px;
+    border-radius: 30px;
+}
+
+.call1-text button a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+
+.call1-flex img{
+    position: relative;
+    top: -40px;
+    width: 50%;
+    height: calc(400px + 40px);
+}
+
+/* **************** */
+
+.call2{
+    margin-top: 45px;
+    text-align: center;
+}
+
+.call2 h2{
+    color: #472663;
+    font-weight: 300;
+}
+
+.call2 p{
+    padding: 30px 0;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.call2 img{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 3px;
+    position: relative;
+    top: 70px;
+}
+
+/* ************* */
+
+.call3{
+    padding-top: 100px;
+    background-color:#835fa7;
+    width: 100%;
+    height: 300px;
+}
+
+.call3 h2{
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+.call3 p{
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 15px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+/* ************* */
+.contato{
+    background-color: #472563;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.contato .form-box{
+    margin: 0 auto;
+    width: 600px;
+    color: white;
+}
+
+.contato .form-box h2{
+    font-weight: 300;
+    font-size: 30px;
+    margin: 15px;
+    text-align: center;
+}
+
+.contato .form-box p{
+    font-weight: 300;
+    font-size: 17px;
+    margin: 25px;
+    text-align: center;
+}
+
+.contato form input[type="text"],
+.contato form input[type="tel"],
+.contato form input[type="email"]{
+    width: 100%;
+    margin-top: 10px;
+    height: 55px;
+    line-height: 55px;
+    padding-left: 7px;
+    font-size: 17px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+
+.contato form textarea{
+    width: 100%;
+    margin-top: 10px;
+    height: 140px;
+    padding: 7px;
+    font-size: 17px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    resize: none;
+    overflow: hidden;
+}
+
+.contato form input[type="submit"]{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+
+    width: 50%;
+    font-size: 22px;
+    color: white;
+    background-color: #ff703d;
+    text-align: center;
+    margin-top: 20px;
+    height: 50px;
+    border: 0;
+    border-radius: 32.5px;
+}
+
+/* ************ */
+
+footer{
+    padding: 40px 0;
+    background-color: #192123;
+}
+
+footer .flex-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    color: whitesmoke;
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 950px){
+
+    header .h-text{
+        float: none;
+        margin: 25% 0;
+        position: relative; 
+        left: 50%;
+        transform: translateX(-50%);
+       -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+       -webkit-transform: translateX(-50%);
+    }
+
+    /*  */
+    .call1-text{
+        width: 370px;
+        padding-left: 0px;
+        margin: 40px auto;
+    }
+
+    .call1-flex img{
+        display: none;
+    }
+
+    .call1-text h2{
+        font-size: 32px;
+    }
+    
+    .call1-text p{
+        margin-top: 15px;
+        font-size: 22px;
+    }
+
+    .call1-text ul li{
+        font-weight: 300;
+        font-size: 20px;
+    }
+    
+    .call1-text button{
+       position: relative;
+       left: 50%;
+       transform: translateX(-50%);
+       -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+       -webkit-transform: translateX(-50%);
+        width: 185px;
+        height: 54px;
+    }
+    
+    .call1-text button a{
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    /* ********** */
+
+
+
+}
+
+@media screen and (max-width: 768px){
+    header .desktop{
+        display: none;
+    }
+
+    header .mobile{
+        margin-top: 25px;
+        margin-right: 10px;
+        cursor: pointer;
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-image: url('../img/menu.png');
+        background-size: 100% 100%;
+    }
+
+    header .mobile ul{
+        display: none;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 80px;
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    header .mobile ul li{
+        padding:8px 0;
+        transition: 0.4s;
+        border-bottom: 1px solid black;
+    }
+    
+    header .mobile ul li:hover{
+        background-color: rgb(230,230,230);
+    }
+    
+    header .mobile ul li a{
+        color: black;
+        display: block;
+        text-decoration: none;
+    }
+}
+
