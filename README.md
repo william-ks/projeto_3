@@ -1,4 +1,4 @@
-# projeto3
+# Projeto Landing Page 3
 
 Um projeto simples de uma landing page funcional.
 
