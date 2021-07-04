@@ -89,6 +89,7 @@ header > .center{
 }
 
 .mobile ul{
+    z-index: 2;
     display: none;
     width: 100%;
     position: absolute;
